@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Контент">
+<meta name="theme-color" content="#4d7352">
+<title>Контент-планировщик</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEwMCIgZmlsbD0iIzRkNzM1MiIvPgogIDxyZWN0IHg9IjYwIiB5PSI4MCIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIyOCIgcng9IjEwIiBmaWxsPSIjYThjNWFjIi8+CiAgPHJlY3QgeD0iNjAiIHk9IjEyNSIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxOCIgcng9IjgiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC40KSIvPgogIDxyZWN0IHg9IjYwIiB5PSIxNzUiIHdpZHRoPSIzOTIiIGhlaWdodD0iMiIgcng9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIvPgogIDwhLS0gQ2FsZW5kYXIgZ3JpZCAtLT4KICA8cmVjdCB4PSI2MCIgeT0iMjAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iIzdhOWU3ZSIvPgogIDxyZWN0IHg9IjEyNCIgeT0iMjAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iIzdhOWU3ZSIvPgogIDxyZWN0IHg9IjE4OCIgeT0iMjAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iI2Q0YTVhMCIvPgogIDxyZWN0IHg9IjI1MiIgeT0iMjAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iIzdhOWU3ZSIvPgogIDxyZWN0IHg9IjMxNiIgeT0iMjAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iIzdhOWU3ZSIvPgogIDxyZWN0IHg9IjM4MCIgeT0iMjAwIiB3aWR0aD0iNzIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iI2E4YzVhYyIvPgogIDxyZWN0IHg9IjYwIiB5PSIyNjQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjN2E5ZTdlIi8+CiAgPHJlY3QgeD0iMTI0IiB5PSIyNjQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjZDRhNWEwIi8+CiAgPHJlY3QgeD0iMTg4IiB5PSIyNjQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjN2E5ZTdlIi8+CiAgPHJlY3QgeD0iMjUyIiB5PSIyNjQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjN2E5ZTdlIi8+CiAgPHJlY3QgeD0iMzE2IiB5PSIyNjQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjYThjNWFjIi8+CiAgPHJlY3QgeD0iMzgwIiB5PSIyNjQiIHdpZHRoPSI3MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjN2E5ZTdlIi8+CiAgPCEtLSBCb3R0b20gYmFyIC0tPgogIDxyZWN0IHg9IjYwIiB5PSIzNTAiIHdpZHRoPSIzOTIiIGhlaWdodD0iNTAiIHJ4PSIxNCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjE1KSIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzg1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIj7QmtC+0L3RgtC10L3RgjwvdGV4dD4KICA8IS0tIFNwYXJrbGUgLS0+CiAgPGNpcmNsZSBjeD0iNDMwIiBjeT0iMTAwIiByPSIyMiIgZmlsbD0iI2Y1ZjBlOCIgb3BhY2l0eT0iMC45Ii8+CiAgPHRleHQgeD0iNDMwIiB5PSIxMDgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMjIiPuKcpjwvdGV4dD4KPC9zdmc+">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEwMCIgZmlsbD0iIzRkNzM1MiIvPgogIDxyZWN0IHg9IjYwIiB5PSI4MCIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIyOCIgcng9IjEwIiBmaWxsPSIjYThjNWFjIi8+CiAgPHJlY3QgeD0iNjAiIHk9IjEyNSIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxOCIgcng9IjgiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC40KSIvPgogIDxyZWN0IHg9IjYwIiB5PSIxNzUiIHdpZHRoPSIzOTIiIGhlaWdodD0iMiIgcng9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4yKSIvPgogIDwhLS0gQ2FsZW5kYXIgZ3JpZCAtLT4KICA8cmVjdCB4PSI2MCIgeT0iMjAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iIzdhOWU3ZSIvPgogIDxyZWN0IHg9IjEyNCIgeT0iMjAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iIzdhOWU3ZSIvPgogIDxyZWN0IHg9IjE4OCIgeT0iMjAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iI2Q0YTVhMCIvPgogIDxyZWN0IHg9IjI1MiIgeT0iMjAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iIzdhOWU3ZSIvPgogIDxyZWN0IHg9IjMxNiIgeT0iMjAwIiB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iIzdhOWU3ZSIvPgogIDxyZWN0IHg9IjM4MCIgeT0iMjAwIiB3aWR0aD0iNzIiIGhlaWdodD0iNTIiIHJ4PSIxMCIgZmlsbD0iI2E4YzVhYyIvPgogIDxyZWN0IHg9IjYwIiB5PSIyNjQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjN2E5ZTdlIi8+CiAgPHJlY3QgeD0iMTI0IiB5PSIyNjQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjZDRhNWEwIi8+CiAgPHJlY3QgeD0iMTg4IiB5PSIyNjQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjN2E5ZTdlIi8+CiAgPHJlY3QgeD0iMjUyIiB5PSIyNjQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjN2E5ZTdlIi8+CiAgPHJlY3QgeD0iMzE2IiB5PSIyNjQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjYThjNWFjIi8+CiAgPHJlY3QgeD0iMzgwIiB5PSIyNjQiIHdpZHRoPSI3MiIgaGVpZ2h0PSI1MiIgcng9IjEwIiBmaWxsPSIjN2E5ZTdlIi8+CiAgPCEtLSBCb3R0b20gYmFyIC0tPgogIDxyZWN0IHg9IjYwIiB5PSIzNTAiIHdpZHRoPSIzOTIiIGhlaWdodD0iNTAiIHJ4PSIxNCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjE1KSIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzg1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIj7QmtC+0L3RgtC10L3RgjwvdGV4dD4KICA8IS0tIFNwYXJrbGUgLS0+CiAgPGNpcmNsZSBjeD0iNDMwIiBjeT0iMTAwIiByPSIyMiIgZmlsbD0iI2Y1ZjBlOCIgb3BhY2l0eT0iMC45Ii8+CiAgPHRleHQgeD0iNDMwIiB5PSIxMDgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMjIiPuKcpjwvdGV4dD4KPC9zdmc+">
+<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjogItCa0L7QvdGC0LXQvdGCLdC/0LvQsNC90LjRgNC+0LLRidC40LoiLCAic2hvcnRfbmFtZSI6ICLQmtC+0L3RgtC10L3RgiIsICJzdGFydF91cmwiOiAiLiIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjNGQ3MzUyIiwgInRoZW1lX2NvbG9yIjogIiM0ZDczNTIiLCAiZGVzY3JpcHRpb24iOiAi0J/Qu9Cw0L3QuNGA0L7QstGJ0LjQuiDQutC+0L3RgtC10L3RgtCwINC00LvRjyBZb3VUdWJlINC4IEluc3RhZ3JhbSIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSFpwWlhkQ2IzZzlJakFnTUNBMU1USWdOVEV5SWo0S0lDQThjbVZqZENCM2FXUjBhRDBpTlRFeUlpQm9aV2xuYUhROUlqVXhNaUlnY25nOUlqRXdNQ0lnWm1sc2JEMGlJelJrTnpNMU1pSXZQZ29nSUR4eVpXTjBJSGc5SWpZd0lpQjVQU0k0TUNJZ2QybGtkR2c5SWpJeU1DSWdhR1ZwWjJoMFBTSXlPQ0lnY25nOUlqRXdJaUJtYVd4c1BTSWpZVGhqTldGaklpOCtDaUFnUEhKbFkzUWdlRDBpTmpBaUlIazlJakV5TlNJZ2QybGtkR2c5SWpFMk1DSWdhR1ZwWjJoMFBTSXhPQ0lnY25nOUlqZ2lJR1pwYkd3OUluSm5ZbUVvTWpVMUxESTFOU3d5TlRVc01DNDBLU0l2UGdvZ0lEeHlaV04wSUhnOUlqWXdJaUI1UFNJeE56VWlJSGRwWkhSb1BTSXpPVElpSUdobGFXZG9kRDBpTWlJZ2NuZzlJakVpSUdacGJHdzlJbkpuWW1Fb01qVTFMREkxTlN3eU5UVXNNQzR5S1NJdlBnb2dJRHdoTFMwZ1EyRnNaVzVrWVhJZ1ozSnBaQ0F0TFQ0S0lDQThjbVZqZENCNFBTSTJNQ0lnZVQwaU1qQXdJaUIzYVdSMGFEMGlOVElpSUdobGFXZG9kRDBpTlRJaUlISjRQU0l4TUNJZ1ptbHNiRDBpSXpkaE9XVTNaU0l2UGdvZ0lEeHlaV04wSUhnOUlqRXlOQ0lnZVQwaU1qQXdJaUIzYVdSMGFEMGlOVElpSUdobGFXZG9kRDBpTlRJaUlISjRQU0l4TUNJZ1ptbHNiRDBpSXpkaE9XVTNaU0l2UGdvZ0lEeHlaV04wSUhnOUlqRTRPQ0lnZVQwaU1qQXdJaUIzYVdSMGFEMGlOVElpSUdobGFXZG9kRDBpTlRJaUlISjRQU0l4TUNJZ1ptbHNiRDBpSTJRMFlUVmhNQ0l2UGdvZ0lEeHlaV04wSUhnOUlqSTFNaUlnZVQwaU1qQXdJaUIzYVdSMGFEMGlOVElpSUdobGFXZG9kRDBpTlRJaUlISjRQU0l4TUNJZ1ptbHNiRDBpSXpkaE9XVTNaU0l2UGdvZ0lEeHlaV04wSUhnOUlqTXhOaUlnZVQwaU1qQXdJaUIzYVdSMGFEMGlOVElpSUdobGFXZG9kRDBpTlRJaUlISjRQU0l4TUNJZ1ptbHNiRDBpSXpkaE9XVTNaU0l2UGdvZ0lEeHlaV04wSUhnOUlqTTRNQ0lnZVQwaU1qQXdJaUIzYVdSMGFEMGlOeklpSUdobGFXZG9kRDBpTlRJaUlISjRQU0l4TUNJZ1ptbHNiRDBpSTJFNFl6VmhZeUl2UGdvZ0lEeHlaV04wSUhnOUlqWXdJaUI1UFNJeU5qUWlJSGRwWkhSb1BTSTFNaUlnYUdWcFoyaDBQU0kxTWlJZ2NuZzlJakV3SWlCbWFXeHNQU0lqTjJFNVpUZGxJaTgrQ2lBZ1BISmxZM1FnZUQwaU1USTBJaUI1UFNJeU5qUWlJSGRwWkhSb1BTSTFNaUlnYUdWcFoyaDBQU0kxTWlJZ2NuZzlJakV3SWlCbWFXeHNQU0lqWkRSaE5XRXdJaTgrQ2lBZ1BISmxZM1FnZUQwaU1UZzRJaUI1UFNJeU5qUWlJSGRwWkhSb1BTSTFNaUlnYUdWcFoyaDBQU0kxTWlJZ2NuZzlJakV3SWlCbWFXeHNQU0lqTjJFNVpUZGxJaTgrQ2lBZ1BISmxZM1FnZUQwaU1qVXlJaUI1UFNJeU5qUWlJSGRwWkhSb1BTSTFNaUlnYUdWcFoyaDBQU0kxTWlJZ2NuZzlJakV3SWlCbWFXeHNQU0lqTjJFNVpUZGxJaTgrQ2lBZ1BISmxZM1FnZUQwaU16RTJJaUI1UFNJeU5qUWlJSGRwWkhSb1BTSTFNaUlnYUdWcFoyaDBQU0kxTWlJZ2NuZzlJakV3SWlCbWFXeHNQU0lqWVRoak5XRmpJaTgrQ2lBZ1BISmxZM1FnZUQwaU16Z3dJaUI1UFNJeU5qUWlJSGRwWkhSb1BTSTNNaUlnYUdWcFoyaDBQU0kxTWlJZ2NuZzlJakV3SWlCbWFXeHNQU0lqTjJFNVpUZGxJaTgrQ2lBZ1BDRXRMU0JDYjNSMGIyMGdZbUZ5SUMwdFBnb2dJRHh5WldOMElIZzlJall3SWlCNVBTSXpOVEFpSUhkcFpIUm9QU0l6T1RJaUlHaGxhV2RvZEQwaU5UQWlJSEo0UFNJeE5DSWdabWxzYkQwaWNtZGlZU2d5TlRVc01qVTFMREkxTlN3d0xqRTFLU0l2UGdvZ0lEeDBaWGgwSUhnOUlqSTFOaUlnZVQwaU16ZzFJaUIwWlhoMExXRnVZMmh2Y2owaWJXbGtaR3hsSWlCbWIyNTBMV1poYldsc2VUMGlSMlZ2Y21kcFlTeHpaWEpwWmlJZ1ptOXVkQzF6YVhwbFBTSXlPQ0lnWm05dWRDMTNaV2xuYUhROUltSnZiR1FpSUdacGJHdzlJbmRvYVhSbElqN1FtdEMrMEwzUmd0QzEwTDNSZ2p3dmRHVjRkRDRLSUNBOElTMHRJRk53WVhKcmJHVWdMUzArQ2lBZ1BHTnBjbU5zWlNCamVEMGlORE13SWlCamVUMGlNVEF3SWlCeVBTSXlNaUlnWm1sc2JEMGlJMlkxWmpCbE9DSWdiM0JoWTJsMGVUMGlNQzQ1SWk4K0NpQWdQSFJsZUhRZ2VEMGlORE13SWlCNVBTSXhNRGdpSUhSbGVIUXRZVzVqYUc5eVBTSnRhV1JrYkdVaUlHWnZiblF0YzJsNlpUMGlNaklpUHVLY3Bqd3ZkR1Y0ZEQ0S1BDOXpkbWMrIiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9zdmcreG1sIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn1dfQ==">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sage: #7a9e7e;
+    --sage-light: #a8c5ac;
+    --sage-dark: #4d7352;
+    --cream: #f5f0e8;
+    --warm: #e8ddd0;
+    --blush: #d4a5a0;
+    --text: #2c2c2c;
+    --text-muted: #8a8a8a;
+    --card: #ffffff;
+    --border: #e0d9d0;
+    --yt: #ff0000;
+    --ig: #c13584;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    position: fixed; top: 0; left: 0; width: 220px; height: 100vh;
+    background: var(--sage-dark);
+    display: flex; flex-direction: column;
+    z-index: 100;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.1);
+  }
+
+  .logo {
+    padding: 28px 20px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .logo h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.3;
+  }
+
+  .logo span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    color: var(--sage-light);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 4px;
+  }
+
+  .nav { flex: 1; padding: 16px 0; }
+
+  .nav-section {
+    padding: 8px 20px 4px;
+    font-size: 10px;
+    color: var(--sage-light);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .nav-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 20px;
+    color: rgba(255,255,255,0.75);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+  }
+
+  .nav-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
+  .nav-item.active {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border-left-color: var(--sage-light);
+    font-weight: 500;
+  }
+
+  .nav-item .icon { font-size: 16px; width: 20px; text-align: center; }
+
+  .platforms {
+    padding: 16px 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .platforms p { font-size: 10px; color: var(--sage-light); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+
+  .platform-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 3px 2px;
+    color: #fff;
+  }
+  .platform-badge.yt { background: rgba(255,0,0,0.4); }
+  .platform-badge.ig { background: rgba(193,53,132,0.4); }
+
+  /* MAIN */
+  .main {
+    margin-left: 220px;
+    min-height: 100vh;
+  }
+
+  .topbar {
+    background: #fff;
+    padding: 16px 32px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 50;
+  }
+
+  .topbar h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .topbar-right { display: flex; align-items: center; gap: 12px; }
+
+  .btn {
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  .btn-primary { background: var(--sage-dark); color: #fff; }
+  .btn-primary:hover { background: var(--sage); }
+  .btn-outline { background: transparent; border: 1.5px solid var(--border); color: var(--text); }
+  .btn-outline:hover { border-color: var(--sage); color: var(--sage-dark); }
+
+  .content { padding: 28px 32px; }
+
+  /* PAGES */
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* DASHBOARD */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .stat-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--sage);
+  }
+
+  .stat-card.blush::before { background: var(--blush); }
+  .stat-card.yt::before { background: var(--yt); }
+  .stat-card.ig::before { background: var(--ig); }
+
+  .stat-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .stat-value { font-size: 28px; font-weight: 600; font-family: 'Playfair Display', serif; }
+  .stat-sub { font-size: 12px; color: var(--sage); margin-top: 4px; }
+
+  .dash-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .card-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+
+  .card-header h3 { font-size: 15px; font-weight: 600; }
+  .card-body { padding: 16px 20px; }
+
+  .today-post {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px;
+    border-radius: 10px;
+    background: var(--cream);
+    margin-bottom: 10px;
+  }
+
+  .post-color {
+    width: 42px; height: 42px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .post-info h4 { font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+  .post-info p { font-size: 12px; color: var(--text-muted); }
+
+  .status-badge {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    margin-left: auto;
+  }
+
+  .status-draft { background: #fef9c3; color: #854d0e; }
+  .status-plan { background: #dbeafe; color: #1e40af; }
+  .status-post { background: #dcfce7; color: #166534; }
+  .status-done { background: #f0fdf4; color: #15803d; }
+
+  .task-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .task-item:last-child { border-bottom: none; }
+
+  .task-check {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .task-check.done { background: var(--sage); border-color: var(--sage); color: #fff; font-size: 10px; }
+
+  /* ПЛАНОВЩИК */
+  .planner-controls {
+    display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; align-items: center;
+  }
+
+  .search-input {
+    padding: 9px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    background: #fff;
+    outline: none;
+    width: 220px;
+    transition: border 0.2s;
+  }
+  .search-input:focus { border-color: var(--sage); }
+
+  select.filter-select {
+    padding: 9px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    color: var(--text);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  thead tr { background: var(--sage-dark); color: #fff; }
+  th {
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 11px 14px;
+    font-size: 13px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+  }
+
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: var(--cream); }
+
+  .platform-pill {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .pill-yt { background: #fee2e2; color: #b91c1c; }
+  .pill-ig { background: #fce7f3; color: #9d174d; }
+  .pill-tg { background: #dbeafe; color: #1e40af; }
+  .pill-vk { background: #ede9fe; color: #5b21b6; }
+  .pill-tk { background: #f0fdf4; color: #166534; }
+
+  .step-badge {
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .action-btn {
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+
+  .action-edit { background: var(--cream); color: var(--text); }
+  .action-edit:hover { background: var(--sage-light); color: #fff; }
+  .action-del { background: #fee2e2; color: #b91c1c; }
+  .action-del:hover { background: #b91c1c; color: #fff; }
+
+  /* MODAL */
+  .modal-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-overlay.open { display: flex; }
+
+  .modal {
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px;
+    width: 560px;
+    max-width: 95vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  }
+
+  .modal h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { margin-bottom: 14px; }
+  .form-group label { display: block; font-size: 12px; font-weight: 500; margin-bottom: 6px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    background: #fff;
+    outline: none;
+    transition: border 0.2s;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--sage); }
+
+  .form-group textarea { height: 80px; resize: vertical; }
+
+  .platform-checkboxes {
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+
+  .platform-check {
+    display: flex; align-items: center; gap: 6px;
+    padding: 6px 12px;
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.2s;
+    user-select: none;
+  }
+
+  .platform-check input { display: none; }
+
+  .platform-check.selected-yt { background: #fee2e2; border-color: var(--yt); color: #b91c1c; }
+  .platform-check.selected-ig { background: #fce7f3; border-color: var(--ig); color: #9d174d; }
+  .platform-check.selected-tg { background: #dbeafe; border-color: #3b82f6; color: #1e40af; }
+  .platform-check.selected-vk { background: #ede9fe; border-color: #8b5cf6; color: #5b21b6; }
+  .platform-check.selected-tk { background: #f0fdf4; border-color: #22c55e; color: #166534; }
+
+  .modal-footer { display: flex; gap: 10px; margin-top: 20px; justify-content: flex-end; }
+
+  /* CALENDAR */
+  .calendar-nav {
+    display: flex; align-items: center; gap: 16px; margin-bottom: 20px;
+  }
+
+  .cal-nav-btn {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    background: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .cal-nav-btn:hover { background: var(--sage); color: #fff; border-color: var(--sage); }
+
+  .cal-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    padding: 16px;
+  }
+
+  .cal-day-header {
+    text-align: center;
+    padding: 8px 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .cal-day {
+    min-height: 80px;
+    border-radius: 8px;
+    padding: 6px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .cal-day:hover { border-color: var(--sage-light); background: #f9faf8; }
+
+  .cal-day.other-month .cal-day-num { color: #d0d0d0; }
+  .cal-day.today { background: var(--cream); border-color: var(--sage-light); }
+  .cal-day.has-posts { background: rgba(122, 158, 126, 0.06); }
+
+  .cal-day-num {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .cal-day.today .cal-day-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px;
+    background: var(--sage-dark);
+    color: #fff;
+    border-radius: 50%;
+  }
+
+  .cal-post-dot {
+    display: flex; align-items: center; gap: 3px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .dot-yt { background: #fee2e2; color: #b91c1c; }
+  .dot-ig { background: #fce7f3; color: #9d174d; }
+  .dot-other { background: #f0fdf4; color: #166534; }
+
+  /* ANALYTICS */
+  .analytics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .progress-bar-wrap { margin-bottom: 12px; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 5px; }
+  .progress-bar { height: 8px; background: var(--cream); border-radius: 20px; overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 20px; transition: width 0.6s ease; }
+
+  .mini-chart {
+    display: flex; align-items: flex-end; gap: 6px;
+    height: 80px;
+    padding: 10px 0;
+  }
+
+  .bar {
+    flex: 1;
+    border-radius: 4px 4px 0 0;
+    min-height: 4px;
+    transition: height 0.4s ease;
+    position: relative;
+  }
+
+  .bar:hover::after {
+    content: attr(data-val);
+    position: absolute;
+    top: -22px; left: 50%;
+    transform: translateX(-50%);
+    background: var(--text);
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .chart-labels { display: flex; gap: 6px; margin-top: 4px; }
+  .chart-label { flex: 1; text-align: center; font-size: 10px; color: var(--text-muted); }
+
+  /* TASKS */
+  .tasks-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .task-col {
+    background: var(--cream);
+    border-radius: 12px;
+    padding: 14px;
+    min-height: 300px;
+  }
+
+  .task-col-header {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+
+  .task-count {
+    background: var(--sage-dark);
+    color: #fff;
+    border-radius: 20px;
+    padding: 2px 8px;
+    font-size: 11px;
+  }
+
+  .task-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 1px solid var(--border);
+    cursor: grab;
+    transition: box-shadow 0.2s;
+  }
+
+  .task-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .task-card h4 { font-size: 13px; font-weight: 500; margin-bottom: 4px; }
+  .task-card p { font-size: 11px; color: var(--text-muted); }
+
+  .priority-high { border-left: 3px solid #ef4444; }
+  .priority-mid { border-left: 3px solid #f59e0b; }
+  .priority-low { border-left: 3px solid var(--sage); }
+
+  .empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-muted);
+  }
+
+  .empty-state .emoji { font-size: 32px; margin-bottom: 10px; }
+  .empty-state p { font-size: 13px; }
+
+  .tone-chip {
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1.5px solid var(--border);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+    background: #fff;
+  }
+  .tone-chip:hover { border-color: var(--sage); }
+  .tone-chip.active { background: var(--sage-dark); color: #fff; border-color: var(--sage-dark); }
+
+  .idea-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1.5px solid var(--border);
+    cursor: default;
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative;
+  }
+  .idea-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.08); transform: translateY(-2px); }
+  .idea-card.hot { border-color: #f59e0b; }
+  .idea-card.hot::before { content:'🔥'; position:absolute;top:10px;right:10px;font-size:16px; }
+
+  .idea-cat-badge {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    background: var(--cream);
+    color: var(--sage-dark);
+  }
+
+  .goal-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    background: var(--cream);
+    margin-bottom: 8px;
+  }
+  .goal-progress { margin-top: 6px; }
+  .goal-progress input[type=range] { width: 100%; accent-color: var(--sage-dark); cursor: pointer; }
+
+  .form-group label {
+    display: block; font-size: 11px; font-weight: 600;
+    margin-bottom: 5px; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+
+
+  @media (max-width: 900px) {
+    .sidebar { width: 60px; }
+    .sidebar .logo h1, .sidebar .logo span, .nav-item span, .nav-section, .platforms p, .platform-badge { display: none; }
+    .nav-item { padding: 12px; justify-content: center; }
+    .main { margin-left: 60px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .tasks-columns { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .notification {
+    position: fixed; bottom: 24px; right: 24px;
+    background: var(--sage-dark);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    z-index: 300;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 0.3s;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  .notification.show { transform: translateY(0); opacity: 1; }
+
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">
+    <h1>Контент<br>Студия</h1>
+    <span>Планировщик</span>
+  </div>
+  <nav class="nav">
+    <div class="nav-section">Основы</div>
+    <div class="nav-item" onclick="showPage('brand')">
+      <span class="icon">🎨</span>
+      <span>Бренд & Цели</span>
+    </div>
+    <div class="nav-section">Контент</div>
+    <div class="nav-item active" onclick="showPage('dashboard')">
+      <span class="icon">📊</span>
+      <span>Дашборд</span>
+    </div>
+    <div class="nav-item" onclick="showPage('braindump')">
+      <span class="icon">💡</span>
+      <span>Идеи</span>
+    </div>
+    <div class="nav-item" onclick="showPage('planner')">
+      <span class="icon">📋</span>
+      <span>Контент-план</span>
+    </div>
+    <div class="nav-item" onclick="showPage('calendar')">
+      <span class="icon">📅</span>
+      <span>Календарь</span>
+    </div>
+    <div class="nav-item" onclick="showPage('tasks')">
+      <span class="icon">✅</span>
+      <span>Задачи</span>
+    </div>
+    <div class="nav-item" onclick="showPage('analytics')">
+      <span class="icon">📈</span>
+      <span>Аналитика</span>
+    </div>
+  </nav>
+  <div class="platforms">
+    <p>Платформы</p>
+    <div class="platform-badge yt">▶ YouTube</div>
+    <div class="platform-badge ig">◈ Instagram</div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="topbar">
+    <h2 id="page-title">Дашборд</h2>
+    <div class="topbar-right">
+      <span id="today-date" style="font-size:13px;color:var(--text-muted)"></span>
+      <button class="btn btn-primary" onclick="openAddModal()">+ Добавить пост</button>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- BRAND & GOALS -->
+    <div id="page-brand" class="page">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+
+        <!-- Brand Identity -->
+        <div class="card">
+          <div class="card-header">
+            <h3>🎨 Бренд-идентичность</h3>
+            <button class="btn btn-primary" style="font-size:12px;padding:6px 14px" onclick="saveBrand()">Сохранить</button>
+          </div>
+          <div class="card-body" style="display:flex;flex-direction:column;gap:14px">
+            <div class="form-group" style="margin:0">
+              <label>Имя / Название канала</label>
+              <input type="text" id="b-name" class="search-input" style="width:100%" placeholder="Например: Анна о жизни в Москве">
+            </div>
+            <div class="form-group" style="margin:0">
+              <label>Описание / Миссия</label>
+              <textarea id="b-mission" style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;height:80px;resize:vertical;outline:none" placeholder="Для кого ты создаёшь контент и зачем?"></textarea>
+            </div>
+            <div class="form-group" style="margin:0">
+              <label>Целевая аудитория</label>
+              <input type="text" id="b-audience" class="search-input" style="width:100%" placeholder="Женщины 25-35, интересуются...">
+            </div>
+            <div class="form-group" style="margin:0">
+              <label>Тон голоса / Стиль</label>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:4px" id="tone-chips">
+                <span class="tone-chip" onclick="toggleTone(this)">😊 Дружелюбный</span>
+                <span class="tone-chip" onclick="toggleTone(this)">💼 Профессиональный</span>
+                <span class="tone-chip" onclick="toggleTone(this)">😂 С юмором</span>
+                <span class="tone-chip" onclick="toggleTone(this)">✨ Вдохновляющий</span>
+                <span class="tone-chip" onclick="toggleTone(this)">🧠 Экспертный</span>
+                <span class="tone-chip" onclick="toggleTone(this)">🌿 Душевный</span>
+                <span class="tone-chip" onclick="toggleTone(this)">🔥 Энергичный</span>
+              </div>
+            </div>
+            <div class="form-group" style="margin:0">
+              <label>Ключевые темы / Рубрики</label>
+              <input type="text" id="b-pillars" class="search-input" style="width:100%" placeholder="Влог, Советы, Обзоры, Туториалы...">
+            </div>
+            <div class="form-group" style="margin:0">
+              <label>Цвета бренда</label>
+              <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+                <div style="display:flex;align-items:center;gap:6px"><input type="color" id="b-color1" value="#7a9e7e" style="width:36px;height:36px;border:none;border-radius:8px;cursor:pointer"><span style="font-size:12px">Основной</span></div>
+                <div style="display:flex;align-items:center;gap:6px"><input type="color" id="b-color2" value="#d4a5a0" style="width:36px;height:36px;border:none;border-radius:8px;cursor:pointer"><span style="font-size:12px">Акцент</span></div>
+                <div style="display:flex;align-items:center;gap:6px"><input type="color" id="b-color3" value="#f5f0e8" style="width:36px;height:36px;border:none;border-radius:8px;cursor:pointer"><span style="font-size:12px">Фон</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Goals -->
+        <div style="display:flex;flex-direction:column;gap:20px">
+          <div class="card">
+            <div class="card-header">
+              <h3>🎯 Цели</h3>
+              <button class="btn btn-outline" style="font-size:12px;padding:5px 12px" onclick="openGoalModal()">+ Добавить</button>
+            </div>
+            <div class="card-body" id="goals-list">
+              <div class="empty-state"><div class="emoji">🎯</div><p>Добавь свои цели</p></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"><h3>📌 Мои платформы</h3></div>
+            <div class="card-body" style="display:flex;flex-direction:column;gap:10px">
+              <div style="display:flex;align-items:center;gap:12px;padding:10px;background:var(--cream);border-radius:10px">
+                <span style="font-size:20px">▶</span>
+                <div style="flex:1">
+                  <div style="font-size:13px;font-weight:600">YouTube</div>
+                  <input type="text" id="b-yt-link" class="search-input" style="width:100%;margin-top:4px;padding:6px 10px;font-size:12px" placeholder="Ссылка на канал...">
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;padding:10px;background:var(--cream);border-radius:10px">
+                <span style="font-size:20px">◈</span>
+                <div style="flex:1">
+                  <div style="font-size:13px;font-weight:600">Instagram</div>
+                  <input type="text" id="b-ig-link" class="search-input" style="width:100%;margin-top:4px;padding:6px 10px;font-size:12px" placeholder="@username">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRAIN DUMP -->
+    <div id="page-braindump" class="page">
+      <div style="display:grid;grid-template-columns:1fr 340px;gap:20px">
+
+        <!-- Ideas board -->
+        <div>
+          <div style="display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center">
+            <input type="text" id="idea-search" class="search-input" placeholder="🔍 Поиск идей..." oninput="filterIdeas()">
+            <select class="filter-select" id="idea-filter-cat" onchange="filterIdeas()">
+              <option value="">Все категории</option>
+              <option>YouTube</option>
+              <option>Instagram</option>
+              <option>Shorts/Reels</option>
+              <option>Коллаборация</option>
+              <option>Серия</option>
+              <option>Разное</option>
+            </select>
+            <select class="filter-select" id="idea-filter-sort" onchange="filterIdeas()">
+              <option value="new">Сначала новые</option>
+              <option value="hot">Сначала горячие 🔥</option>
+              <option value="az">По алфавиту</option>
+            </select>
+          </div>
+          <div id="ideas-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px">
+            <div class="empty-state" style="grid-column:1/-1"><div class="emoji">💡</div><p>Здесь будут твои идеи</p></div>
+          </div>
+        </div>
+
+        <!-- Add idea panel -->
+        <div class="card" style="height:fit-content;position:sticky;top:80px">
+          <div class="card-header"><h3>💡 Новая идея</h3></div>
+          <div class="card-body" style="display:flex;flex-direction:column;gap:12px">
+            <div class="form-group" style="margin:0">
+              <label>Название идеи *</label>
+              <input type="text" id="idea-title" class="search-input" style="width:100%" placeholder="О чём хочешь снять?">
+            </div>
+            <div class="form-group" style="margin:0">
+              <label>Описание / Мысли</label>
+              <textarea id="idea-desc" style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;height:90px;resize:vertical;outline:none" placeholder="Набрасывай мысли как угодно..."></textarea>
+            </div>
+            <div class="form-group" style="margin:0">
+              <label>Категория</label>
+              <select id="idea-cat" style="width:100%;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none">
+                <option>YouTube</option>
+                <option>Instagram</option>
+                <option>Shorts/Reels</option>
+                <option>Коллаборация</option>
+                <option>Серия</option>
+                <option>Разное</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin:0">
+              <label>Горящая идея?</label>
+              <div style="display:flex;gap:8px">
+                <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:13px">
+                  <input type="checkbox" id="idea-hot" style="width:16px;height:16px;accent-color:var(--sage-dark)"> 🔥 Да, горит!
+                </label>
+              </div>
+            </div>
+            <div class="form-group" style="margin:0">
+              <label>Теги</label>
+              <input type="text" id="idea-tags" class="search-input" style="width:100%" placeholder="#влог #советы #лайфстайл">
+            </div>
+            <button class="btn btn-primary" style="width:100%" onclick="saveIdea()">💡 Сохранить идею</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Всего постов</div>
+          <div class="stat-value" id="stat-total">0</div>
+          <div class="stat-sub">↑ в этом месяце</div>
+        </div>
+        <div class="stat-card yt">
+          <div class="stat-label">YouTube</div>
+          <div class="stat-value" id="stat-yt">0</div>
+          <div class="stat-sub">видео запланировано</div>
+        </div>
+        <div class="stat-card ig">
+          <div class="stat-label">Instagram</div>
+          <div class="stat-value" id="stat-ig">0</div>
+          <div class="stat-sub">постов запланировано</div>
+        </div>
+        <div class="stat-card blush">
+          <div class="stat-label">Опубликовано</div>
+          <div class="stat-value" id="stat-done">0</div>
+          <div class="stat-sub">из всех постов</div>
+        </div>
+      </div>
+
+      <div class="dash-grid">
+        <div class="card">
+          <div class="card-header">
+            <h3>📌 Ближайшие посты</h3>
+            <button class="btn btn-outline" style="font-size:12px;padding:5px 12px" onclick="showPage('planner')">Все посты</button>
+          </div>
+          <div class="card-body" id="upcoming-posts">
+            <div class="empty-state"><div class="emoji">🌱</div><p>Нет запланированных постов</p></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"><h3>✅ Задачи на сегодня</h3></div>
+          <div class="card-body" id="today-tasks-list">
+            <div class="empty-state"><div class="emoji">☀️</div><p>Нет задач</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLANNER -->
+    <div id="page-planner" class="page">
+      <div class="planner-controls">
+        <input type="text" class="search-input" placeholder="🔍 Поиск по названию..." oninput="filterPosts()" id="search-input">
+        <select class="filter-select" onchange="filterPosts()" id="filter-platform">
+          <option value="">Все платформы</option>
+          <option value="YouTube">YouTube</option>
+          <option value="Instagram">Instagram</option>
+          <option value="TikTok">TikTok</option>
+          <option value="ВКонтакте">ВКонтакте</option>
+          <option value="Telegram">Telegram</option>
+        </select>
+        <select class="filter-select" onchange="filterPosts()" id="filter-status">
+          <option value="">Все статусы</option>
+          <option value="Идея">Идея</option>
+          <option value="Сценарий">Сценарий</option>
+          <option value="Съёмка">Съёмка</option>
+          <option value="Монтаж">Монтаж</option>
+          <option value="Готово">Готово</option>
+          <option value="Опубликован">Опубликован</option>
+        </select>
+        <select class="filter-select" onchange="filterPosts()" id="filter-format">
+          <option value="">Все форматы</option>
+          <option value="Видео">Видео</option>
+          <option value="Shorts/Reels">Shorts/Reels</option>
+          <option value="Пост">Пост</option>
+          <option value="Stories">Stories</option>
+          <option value="Стрим">Стрим</option>
+        </select>
+        <button class="btn btn-primary" onclick="openAddModal()">+ Добавить</button>
+      </div>
+
+      <table id="posts-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Название</th>
+            <th>Платформа</th>
+            <th>Формат</th>
+            <th>Тема/Рубрика</th>
+            <th>Статус</th>
+            <th>Дата</th>
+            <th>Время</th>
+            <th>Действия</th>
+          </tr>
+        </thead>
+        <tbody id="posts-tbody">
+          <tr><td colspan="9"><div class="empty-state"><div class="emoji">📝</div><p>Добавьте первый пост</p></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- CALENDAR -->
+    <div id="page-calendar" class="page">
+      <div class="calendar-nav">
+        <button class="cal-nav-btn" onclick="changeMonth(-1)">‹</button>
+        <div class="cal-title" id="cal-title"></div>
+        <button class="cal-nav-btn" onclick="changeMonth(1)">›</button>
+        <button class="btn btn-outline" style="margin-left:8px;font-size:12px;padding:6px 14px" onclick="goToday()">Сегодня</button>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
+    </div>
+
+    <!-- TASKS -->
+    <div id="page-tasks" class="page">
+      <div style="display:flex;justify-content:flex-end;margin-bottom:16px">
+        <button class="btn btn-primary" onclick="openTaskModal()">+ Добавить задачу</button>
+      </div>
+      <div class="tasks-columns" id="tasks-board">
+        <div class="task-col">
+          <div class="task-col-header">📋 К выполнению <span class="task-count" id="cnt-todo">0</span></div>
+          <div id="col-todo"></div>
+        </div>
+        <div class="task-col">
+          <div class="task-col-header">🔄 В процессе <span class="task-count" id="cnt-doing">0</span></div>
+          <div id="col-doing"></div>
+        </div>
+        <div class="task-col">
+          <div class="task-col-header">👁 На проверке <span class="task-count" id="cnt-review">0</span></div>
+          <div id="col-review"></div>
+        </div>
+        <div class="task-col">
+          <div class="task-col-header">✅ Готово <span class="task-count" id="cnt-done">0</span></div>
+          <div id="col-done"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANALYTICS -->
+    <div id="page-analytics" class="page">
+      <div class="analytics-grid">
+        <div class="card">
+          <div class="card-header"><h3>📊 Посты по платформам</h3></div>
+          <div class="card-body" id="analytics-platforms"></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3>📈 Статусы контента</h3></div>
+          <div class="card-body" id="analytics-statuses"></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3>🎬 Форматы</h3></div>
+          <div class="card-body" id="analytics-formats"></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3>📅 Активность по месяцам</h3></div>
+          <div class="card-body" id="analytics-months"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MODAL ADD/EDIT POST -->
+<div class="modal-overlay" id="modal-post">
+  <div class="modal">
+    <h3 id="modal-title">Новый пост</h3>
+    <div class="form-row">
+      <div class="form-group" style="grid-column:1/-1">
+        <label>Название *</label>
+        <input type="text" id="f-title" placeholder="Например: Обзор новой камеры">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Формат</label>
+        <select id="f-format">
+          <option>Видео</option>
+          <option>Shorts/Reels</option>
+          <option>Пост</option>
+          <option>Stories</option>
+          <option>Стрим</option>
+          <option>Подкаст</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Тема / Рубрика</label>
+        <input type="text" id="f-pillar" placeholder="Обзор, Туториал, Влог...">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Дата публикации</label>
+        <input type="date" id="f-date">
+      </div>
+      <div class="form-group">
+        <label>Время</label>
+        <input type="time" id="f-time">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Статус</label>
+        <select id="f-status">
+          <option>Идея</option>
+          <option>Сценарий</option>
+          <option>Съёмка</option>
+          <option>Монтаж</option>
+          <option>Готово</option>
+          <option>Опубликован</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Цель</label>
+        <select id="f-goal">
+          <option>Охваты</option>
+          <option>Подписчики</option>
+          <option>Продажи</option>
+          <option>Вовлечённость</option>
+          <option>Бренд</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Платформы</label>
+      <div class="platform-checkboxes" id="platform-checkboxes">
+        <label class="platform-check" data-platform="YouTube" data-class="selected-yt">
+          <input type="checkbox" value="YouTube"> ▶ YouTube
+        </label>
+        <label class="platform-check" data-platform="Instagram" data-class="selected-ig">
+          <input type="checkbox" value="Instagram"> ◈ Instagram
+        </label>
+        <label class="platform-check" data-platform="TikTok" data-class="selected-tk">
+          <input type="checkbox" value="TikTok"> ♪ TikTok
+        </label>
+        <label class="platform-check" data-platform="ВКонтакте" data-class="selected-vk">
+          <input type="checkbox" value="ВКонтакте"> ⊕ ВК
+        </label>
+        <label class="platform-check" data-platform="Telegram" data-class="selected-tg">
+          <input type="checkbox" value="Telegram"> ✈ TG
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Идея / Описание</label>
+      <textarea id="f-idea" placeholder="Краткое описание контента..."></textarea>
+    </div>
+    <div class="form-group">
+      <label>CTA / Призыв</label>
+      <input type="text" id="f-cta" placeholder="Подпишись, поставь лайк...">
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('modal-post')">Отмена</button>
+      <button class="btn btn-primary" onclick="savePost()">Сохранить</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL TASK -->
+<div class="modal-overlay" id="modal-task">
+  <div class="modal">
+    <h3>Новая задача</h3>
+    <div class="form-group">
+      <label>Название задачи *</label>
+      <input type="text" id="t-title" placeholder="Снять вступление для видео">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Статус</label>
+        <select id="t-status">
+          <option value="todo">К выполнению</option>
+          <option value="doing">В процессе</option>
+          <option value="review">На проверке</option>
+          <option value="done">Готово</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Приоритет</label>
+        <select id="t-priority">
+          <option value="high">Высокий</option>
+          <option value="mid">Средний</option>
+          <option value="low">Низкий</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Дедлайн</label>
+      <input type="date" id="t-date">
+    </div>
+    <div class="form-group">
+      <label>Описание</label>
+      <textarea id="t-desc" placeholder="Подробности..."></textarea>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('modal-task')">Отмена</button>
+      <button class="btn btn-primary" onclick="saveTask()">Сохранить</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL GOAL -->
+<div class="modal-overlay" id="modal-goal">
+  <div class="modal" style="max-width:420px">
+    <h3>🎯 Новая цель</h3>
+    <div class="form-group">
+      <label>Цель *</label>
+      <input type="text" id="g-title" placeholder="Набрать 10 000 подписчиков на YouTube">
+    </div>
+    <div class="form-group">
+      <label>Дедлайн</label>
+      <input type="date" id="g-date">
+    </div>
+    <div class="form-group">
+      <label>Прогресс (0–100%)</label>
+      <input type="range" id="g-progress" min="0" max="100" value="0" style="width:100%;accent-color:var(--sage-dark)">
+      <div style="text-align:right;font-size:12px;color:var(--sage-dark);margin-top:2px" id="g-progress-val">0%</div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('modal-goal')">Отмена</button>
+      <button class="btn btn-primary" onclick="saveGoal()">Сохранить</button>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+// ========== BRAND ==========
+let brandData = JSON.parse(localStorage.getItem('cp_brand') || '{}');
+let goals = JSON.parse(localStorage.getItem('cp_goals') || '[]');
+let ideas = JSON.parse(localStorage.getItem('cp_ideas') || '[]');
+
+function loadBrand() {
+  if (brandData.name) document.getElementById('b-name').value = brandData.name;
+  if (brandData.mission) document.getElementById('b-mission').value = brandData.mission;
+  if (brandData.audience) document.getElementById('b-audience').value = brandData.audience;
+  if (brandData.pillars) document.getElementById('b-pillars').value = brandData.pillars;
+  if (brandData.color1) document.getElementById('b-color1').value = brandData.color1;
+  if (brandData.color2) document.getElementById('b-color2').value = brandData.color2;
+  if (brandData.color3) document.getElementById('b-color3').value = brandData.color3;
+  if (brandData.ytLink) document.getElementById('b-yt-link').value = brandData.ytLink;
+  if (brandData.igLink) document.getElementById('b-ig-link').value = brandData.igLink;
+  if (brandData.tones) {
+    document.querySelectorAll('.tone-chip').forEach(chip => {
+      if (brandData.tones.includes(chip.textContent.trim())) chip.classList.add('active');
+    });
+  }
+}
+
+function saveBrand() {
+  const tones = [];
+  document.querySelectorAll('.tone-chip.active').forEach(c => tones.push(c.textContent.trim()));
+  brandData = {
+    name: document.getElementById('b-name').value,
+    mission: document.getElementById('b-mission').value,
+    audience: document.getElementById('b-audience').value,
+    pillars: document.getElementById('b-pillars').value,
+    color1: document.getElementById('b-color1').value,
+    color2: document.getElementById('b-color2').value,
+    color3: document.getElementById('b-color3').value,
+    ytLink: document.getElementById('b-yt-link').value,
+    igLink: document.getElementById('b-ig-link').value,
+    tones
+  };
+  localStorage.setItem('cp_brand', JSON.stringify(brandData));
+  notify('✅ Бренд сохранён!');
+}
+
+function toggleTone(el) { el.classList.toggle('active'); }
+
+// Goals
+function openGoalModal() {
+  document.getElementById('g-title').value = '';
+  document.getElementById('g-date').value = '';
+  document.getElementById('g-progress').value = 0;
+  document.getElementById('g-progress-val').textContent = '0%';
+  document.getElementById('modal-goal').classList.add('open');
+}
+
+document.getElementById('g-progress').addEventListener('input', function() {
+  document.getElementById('g-progress-val').textContent = this.value + '%';
+});
+
+function saveGoal() {
+  const title = document.getElementById('g-title').value.trim();
+  if (!title) { notify('⚠️ Введите цель'); return; }
+  goals.push({ id: uid(), title, date: document.getElementById('g-date').value, progress: parseInt(document.getElementById('g-progress').value) });
+  localStorage.setItem('cp_goals', JSON.stringify(goals));
+  closeModal('modal-goal');
+  renderGoals();
+  notify('🎯 Цель добавлена!');
+}
+
+function renderGoals() {
+  const el = document.getElementById('goals-list');
+  if (!goals.length) { el.innerHTML = '<div class="empty-state"><div class="emoji">🎯</div><p>Добавь свои цели</p></div>'; return; }
+  el.innerHTML = goals.map(g => `
+    <div class="goal-item">
+      <span style="font-size:18px">🎯</span>
+      <div style="flex:1">
+        <div style="font-size:13px;font-weight:600;margin-bottom:2px">${g.title}</div>
+        ${g.date ? `<div style="font-size:11px;color:var(--text-muted)">📅 Дедлайн: ${formatDate(g.date)}</div>` : ''}
+        <div class="goal-progress">
+          <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px"><span>Прогресс</span><span style="color:var(--sage-dark);font-weight:600">${g.progress}%</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:${g.progress}%;background:var(--sage-dark)"></div></div>
+        </div>
+      </div>
+      <button class="action-btn action-del" onclick="deleteGoal('${g.id}')">✕</button>
+    </div>
+  `).join('');
+}
+
+function deleteGoal(id) {
+  goals = goals.filter(g => g.id !== id);
+  localStorage.setItem('cp_goals', JSON.stringify(goals));
+  renderGoals();
+}
+
+// ========== BRAIN DUMP ==========
+function saveIdea() {
+  const title = document.getElementById('idea-title').value.trim();
+  if (!title) { notify('⚠️ Введите название идеи'); return; }
+  ideas.unshift({
+    id: uid(),
+    title,
+    desc: document.getElementById('idea-desc').value,
+    cat: document.getElementById('idea-cat').value,
+    hot: document.getElementById('idea-hot').checked,
+    tags: document.getElementById('idea-tags').value,
+    created: Date.now()
+  });
+  localStorage.setItem('cp_ideas', JSON.stringify(ideas));
+  document.getElementById('idea-title').value = '';
+  document.getElementById('idea-desc').value = '';
+  document.getElementById('idea-hot').checked = false;
+  document.getElementById('idea-tags').value = '';
+  renderIdeas();
+  notify('💡 Идея сохранена!');
+}
+
+function renderIdeas(data) {
+  const list = data || ideas;
+  const el = document.getElementById('ideas-grid');
+  if (!list.length) {
+    el.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="emoji">💡</div><p>Здесь будут твои идеи</p></div>';
+    return;
+  }
+  const catColors = { YouTube:'#fee2e2', Instagram:'#fce7f3', 'Shorts/Reels':'#f0fdf4', Коллаборация:'#ede9fe', Серия:'#dbeafe', Разное:'var(--cream)' };
+  el.innerHTML = list.map(idea => `
+    <div class="idea-card ${idea.hot ? 'hot' : ''}">
+      <span class="idea-cat-badge" style="background:${catColors[idea.cat]||'var(--cream)'}">${idea.cat}</span>
+      <h4 style="font-size:14px;font-weight:600;margin-bottom:6px;padding-right:${idea.hot?'24px':'0'}">${idea.title}</h4>
+      ${idea.desc ? `<p style="font-size:12px;color:var(--text-muted);margin-bottom:8px;line-height:1.5">${idea.desc}</p>` : ''}
+      ${idea.tags ? `<div style="font-size:11px;color:var(--sage-dark);margin-bottom:8px">${idea.tags}</div>` : ''}
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+        <span style="font-size:11px;color:var(--text-muted)">${new Date(idea.created).toLocaleDateString('ru-RU')}</span>
+        <div style="display:flex;gap:6px">
+          <button class="action-btn action-edit" onclick="convertIdeaToPost('${idea.id}')">→ В план</button>
+          <button class="action-btn action-del" onclick="deleteIdea('${idea.id}')">✕</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function filterIdeas() {
+  const search = document.getElementById('idea-search').value.toLowerCase();
+  const cat = document.getElementById('idea-filter-cat').value;
+  const sort = document.getElementById('idea-filter-sort').value;
+  let data = ideas.filter(i => (!search || i.title.toLowerCase().includes(search) || (i.desc||'').toLowerCase().includes(search)) && (!cat || i.cat === cat));
+  if (sort === 'hot') data = [...data].sort((a,b) => (b.hot ? 1 : 0) - (a.hot ? 1 : 0));
+  else if (sort === 'az') data = [...data].sort((a,b) => a.title.localeCompare(b.title));
+  renderIdeas(data);
+}
+
+function deleteIdea(id) {
+  ideas = ideas.filter(i => i.id !== id);
+  localStorage.setItem('cp_ideas', JSON.stringify(ideas));
+  renderIdeas();
+  notify('🗑 Идея удалена');
+}
+
+function convertIdeaToPost(id) {
+  const idea = ideas.find(i => i.id === id);
+  if (!idea) return;
+  // Pre-fill the post modal with idea data
+  editingPostId = null;
+  document.getElementById('modal-title').textContent = 'Новый пост из идеи';
+  document.getElementById('f-title').value = idea.title;
+  document.getElementById('f-idea').value = idea.desc || '';
+  document.getElementById('f-format').value = 'Видео';
+  document.getElementById('f-status').value = 'Идея';
+  document.getElementById('f-date').value = '';
+  document.getElementById('f-time').value = '';
+  document.getElementById('f-pillar').value = '';
+  document.getElementById('f-goal').value = 'Охваты';
+  document.getElementById('f-cta').value = '';
+  // Auto-select platform based on category
+  document.querySelectorAll('#platform-checkboxes input').forEach(cb => { cb.checked = false; });
+  document.querySelectorAll('.platform-check').forEach(l => { l.className = 'platform-check'; });
+  if (idea.cat === 'YouTube' || idea.cat === 'Shorts/Reels') {
+    const ytCb = document.querySelector('#platform-checkboxes input[value="YouTube"]');
+    if (ytCb) { ytCb.checked = true; ytCb.closest('label').className = 'platform-check selected-yt'; }
+  }
+  if (idea.cat === 'Instagram') {
+    const igCb = document.querySelector('#platform-checkboxes input[value="Instagram"]');
+    if (igCb) { igCb.checked = true; igCb.closest('label').className = 'platform-check selected-ig'; }
+  }
+  document.getElementById('modal-post').classList.add('open');
+  notify('💡 Идея перенесена в план!');
+}
+
+
+let posts = JSON.parse(localStorage.getItem('cp_posts') || '[]');
+let tasks = JSON.parse(localStorage.getItem('cp_tasks') || '[]');
+let editingPostId = null;
+
+let calYear = new Date().getFullYear();
+let calMonth = new Date().getMonth();
+
+const MONTH_NAMES = ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+const DAY_NAMES = ['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];
+
+// ========== UTILS ==========
+function save() {
+  localStorage.setItem('cp_posts', JSON.stringify(posts));
+  localStorage.setItem('cp_tasks', JSON.stringify(tasks));
+}
+
+function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2); }
+
+function notify(msg) {
+  const n = document.getElementById('notif');
+  n.textContent = msg;
+  n.classList.add('show');
+  setTimeout(() => n.classList.remove('show'), 2500);
+}
+
+function formatDate(d) {
+  if (!d) return '—';
+  const [y,m,day] = d.split('-');
+  return `${day}.${m}.${y}`;
+}
+
+// ========== NAVIGATION ==========
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  const titles = {dashboard:'Дашборд', brand:'Бренд & Цели', braindump:'Идеи', planner:'Контент-план',calendar:'Календарь',tasks:'Задачи',analytics:'Аналитика'};
+  document.getElementById('page-title').textContent = titles[id];
+  event?.currentTarget?.classList.add('active');
+  document.querySelectorAll('.nav-item').forEach(n => {
+    if (n.getAttribute('onclick')?.includes(id)) n.classList.add('active');
+  });
+
+  if (id === 'brand') { loadBrand(); renderGoals(); }
+  if (id === 'braindump') renderIdeas();
+  if (id === 'dashboard') renderDashboard();
+  if (id === 'planner') renderTable();
+  if (id === 'calendar') renderCalendar();
+  if (id === 'tasks') renderTasks();
+  if (id === 'analytics') renderAnalytics();
+}
+
+// Set today's date
+document.getElementById('today-date').textContent = new Date().toLocaleDateString('ru-RU', {weekday:'long',day:'numeric',month:'long'});
+
+// ========== DASHBOARD ==========
+function renderDashboard() {
+  const ytPosts = posts.filter(p => p.platforms?.includes('YouTube'));
+  const igPosts = posts.filter(p => p.platforms?.includes('Instagram'));
+  const donePosts = posts.filter(p => p.status === 'Опубликован');
+
+  document.getElementById('stat-total').textContent = posts.length;
+  document.getElementById('stat-yt').textContent = ytPosts.length;
+  document.getElementById('stat-ig').textContent = igPosts.length;
+  document.getElementById('stat-done').textContent = donePosts.length;
+
+  const upcoming = [...posts]
+    .filter(p => p.date)
+    .sort((a,b) => a.date > b.date ? 1 : -1)
+    .slice(0, 5);
+
+  const upEl = document.getElementById('upcoming-posts');
+  if (!upcoming.length) {
+    upEl.innerHTML = '<div class="empty-state"><div class="emoji">🌱</div><p>Нет запланированных постов</p></div>';
+  } else {
+    upEl.innerHTML = upcoming.map(p => {
+      const platforms = (p.platforms||[]).map(pl => getPlatformPill(pl)).join(' ');
+      const statusClass = getStatusClass(p.status);
+      return `<div class="today-post">
+        <div class="post-color" style="background:${getPlatformColor(p.platforms?.[0])}">${getPlatformEmoji(p.platforms?.[0])}</div>
+        <div class="post-info">
+          <h4>${p.title}</h4>
+          <p>${formatDate(p.date)} ${p.time ? '• '+p.time : ''} ${platforms}</p>
+        </div>
+        <span class="status-badge ${statusClass}">${p.status || 'Идея'}</span>
+      </div>`;
+    }).join('');
+  }
+
+  const todayTasks = tasks.filter(t => t.status !== 'done').slice(0, 5);
+  const ttEl = document.getElementById('today-tasks-list');
+  if (!todayTasks.length) {
+    ttEl.innerHTML = '<div class="empty-state"><div class="emoji">☀️</div><p>Нет активных задач</p></div>';
+  } else {
+    ttEl.innerHTML = todayTasks.map(t => `
+      <div class="task-item">
+        <div class="task-check ${t.status==='done'?'done':''}" onclick="toggleTask('${t.id}')">
+          ${t.status==='done'?'✓':''}
+        </div>
+        <span style="${t.status==='done'?'text-decoration:line-through;color:var(--text-muted)':''}">${t.title}</span>
+        <span class="priority-dot" style="margin-left:auto;font-size:11px;color:${t.priority==='high'?'#ef4444':t.priority==='mid'?'#f59e0b':'var(--sage)'}">${t.priority==='high'?'🔴 высокий':t.priority==='mid'?'🟡 средний':'🟢 низкий'}</span>
+      </div>
+    `).join('');
+  }
+}
+
+function toggleTask(id) {
+  const t = tasks.find(t => t.id === id);
+  if (!t) return;
+  t.status = t.status === 'done' ? 'todo' : 'done';
+  save();
+  renderDashboard();
+}
+
+// ========== POST TABLE ==========
+function renderTable(filterData) {
+  const data = filterData || posts;
+  const tbody = document.getElementById('posts-tbody');
+  if (!data.length) {
+    tbody.innerHTML = '<tr><td colspan="9"><div class="empty-state"><div class="emoji">📝</div><p>Нет постов. Добавьте первый!</p></div></td></tr>';
+    return;
+  }
+  tbody.innerHTML = data.map((p, i) => {
+    const platforms = (p.platforms||[]).map(pl => getPlatformPill(pl)).join(' ');
+    const statusClass = getStatusClass(p.status);
+    return `<tr>
+      <td style="color:var(--text-muted);font-weight:600">${i+1}</td>
+      <td><strong>${p.title}</strong>${p.idea?`<br><span style="font-size:11px;color:var(--text-muted)">${p.idea.slice(0,60)}${p.idea.length>60?'...':''}</span>`:''}</td>
+      <td>${platforms}</td>
+      <td><span class="tag" style="background:var(--cream)">${p.format||'—'}</span></td>
+      <td>${p.pillar||'—'}</td>
+      <td><span class="status-badge ${statusClass}">${p.status||'Идея'}</span></td>
+      <td>${formatDate(p.date)}</td>
+      <td>${p.time||'—'}</td>
+      <td>
+        <button class="action-btn action-edit" onclick="editPost('${p.id}')">✏ Изм.</button>
+        <button class="action-btn action-del" onclick="deletePost('${p.id}')">✕</button>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function filterPosts() {
+  const search = document.getElementById('search-input').value.toLowerCase();
+  const platform = document.getElementById('filter-platform').value;
+  const status = document.getElementById('filter-status').value;
+  const format = document.getElementById('filter-format').value;
+
+  let data = posts.filter(p => {
+    const matchSearch = !search || p.title.toLowerCase().includes(search);
+    const matchPlatform = !platform || (p.platforms||[]).includes(platform);
+    const matchStatus = !status || p.status === status;
+    const matchFormat = !format || p.format === format;
+    return matchSearch && matchPlatform && matchStatus && matchFormat;
+  });
+  renderTable(data);
+}
+
+// ========== POST MODAL ==========
+function openAddModal() {
+  editingPostId = null;
+  document.getElementById('modal-title').textContent = 'Новый пост';
+  document.getElementById('f-title').value = '';
+  document.getElementById('f-format').value = 'Видео';
+  document.getElementById('f-pillar').value = '';
+  document.getElementById('f-date').value = '';
+  document.getElementById('f-time').value = '';
+  document.getElementById('f-status').value = 'Идея';
+  document.getElementById('f-goal').value = 'Охваты';
+  document.getElementById('f-idea').value = '';
+  document.getElementById('f-cta').value = '';
+  document.querySelectorAll('#platform-checkboxes input').forEach(cb => { cb.checked = false; });
+  document.querySelectorAll('.platform-check').forEach(l => {
+    l.className = 'platform-check';
+  });
+  document.getElementById('modal-post').classList.add('open');
+}
+
+function editPost(id) {
+  const p = posts.find(p => p.id === id);
+  if (!p) return;
+  editingPostId = id;
+  document.getElementById('modal-title').textContent = 'Редактировать пост';
+  document.getElementById('f-title').value = p.title;
+  document.getElementById('f-format').value = p.format || 'Видео';
+  document.getElementById('f-pillar').value = p.pillar || '';
+  document.getElementById('f-date').value = p.date || '';
+  document.getElementById('f-time').value = p.time || '';
+  document.getElementById('f-status').value = p.status || 'Идея';
+  document.getElementById('f-goal').value = p.goal || 'Охваты';
+  document.getElementById('f-idea').value = p.idea || '';
+  document.getElementById('f-cta').value = p.cta || '';
+
+  document.querySelectorAll('#platform-checkboxes label').forEach(l => {
+    const cb = l.querySelector('input');
+    const pl = cb.value;
+    const isSelected = (p.platforms||[]).includes(pl);
+    cb.checked = isSelected;
+    l.className = 'platform-check' + (isSelected ? ' ' + l.dataset.class : '');
+  });
+
+  document.getElementById('modal-post').classList.add('open');
+}
+
+function savePost() {
+  const title = document.getElementById('f-title').value.trim();
+  if (!title) { notify('⚠️ Введите название поста'); return; }
+
+  const platforms = [];
+  document.querySelectorAll('#platform-checkboxes input:checked').forEach(cb => platforms.push(cb.value));
+
+  const data = {
+    title,
+    format: document.getElementById('f-format').value,
+    pillar: document.getElementById('f-pillar').value,
+    date: document.getElementById('f-date').value,
+    time: document.getElementById('f-time').value,
+    status: document.getElementById('f-status').value,
+    goal: document.getElementById('f-goal').value,
+    idea: document.getElementById('f-idea').value,
+    cta: document.getElementById('f-cta').value,
+    platforms
+  };
+
+  if (editingPostId) {
+    const idx = posts.findIndex(p => p.id === editingPostId);
+    posts[idx] = { ...posts[idx], ...data };
+    notify('✅ Пост обновлён');
+  } else {
+    posts.push({ id: uid(), ...data, created: Date.now() });
+    notify('✅ Пост добавлен');
+  }
+
+  save();
+  closeModal('modal-post');
+  renderTable();
+  renderDashboard();
+}
+
+function deletePost(id) {
+  if (!confirm('Удалить этот пост?')) return;
+  posts = posts.filter(p => p.id !== id);
+  save();
+  renderTable();
+  renderDashboard();
+  notify('🗑 Пост удалён');
+}
+
+// Platform checkboxes toggle
+document.querySelectorAll('.platform-check').forEach(label => {
+  label.addEventListener('click', () => {
+    const cb = label.querySelector('input');
+    setTimeout(() => {
+      label.className = 'platform-check' + (cb.checked ? ' ' + label.dataset.class : '');
+    }, 0);
+  });
+});
+
+// ========== CALENDAR ==========
+function renderCalendar() {
+  document.getElementById('cal-title').textContent = MONTH_NAMES[calMonth] + ' ' + calYear;
+
+  const grid = document.getElementById('calendar-grid');
+  grid.innerHTML = DAY_NAMES.map(d => `<div class="cal-day-header">${d}</div>`).join('');
+
+  const firstDay = new Date(calYear, calMonth, 1);
+  let startDow = firstDay.getDay();
+  if (startDow === 0) startDow = 7;
+  startDow -= 1;
+
+  const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+  const daysInPrev = new Date(calYear, calMonth, 0).getDate();
+  const today = new Date();
+
+  // Prev month days
+  for (let i = startDow - 1; i >= 0; i--) {
+    const d = daysInPrev - i;
+    const dateStr = `${calYear}-${String(calMonth).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    grid.appendChild(makeDayEl(d, dateStr, true, false, []));
+  }
+
+  // Current month
+  for (let d = 1; d <= daysInMonth; d++) {
+    const dateStr = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const isToday = d === today.getDate() && calMonth === today.getMonth() && calYear === today.getFullYear();
+    const dayPosts = posts.filter(p => p.date === dateStr);
+    grid.appendChild(makeDayEl(d, dateStr, false, isToday, dayPosts));
+  }
+
+  // Next month padding
+  const totalCells = startDow + daysInMonth;
+  const remaining = totalCells % 7 === 0 ? 0 : 7 - (totalCells % 7);
+  for (let d = 1; d <= remaining; d++) {
+    const dateStr = `${calYear}-${String(calMonth+2).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    grid.appendChild(makeDayEl(d, dateStr, true, false, []));
+  }
+}
+
+function makeDayEl(d, dateStr, otherMonth, isToday, dayPosts) {
+  const el = document.createElement('div');
+  el.className = 'cal-day' + (otherMonth ? ' other-month' : '') + (isToday ? ' today' : '') + (dayPosts.length ? ' has-posts' : '');
+  const numHtml = `<div class="cal-day-num">${d}</div>`;
+  const dotsHtml = dayPosts.slice(0, 3).map(p => {
+    const cls = (p.platforms||[]).includes('YouTube') ? 'dot-yt' : (p.platforms||[]).includes('Instagram') ? 'dot-ig' : 'dot-other';
+    return `<div class="cal-post-dot ${cls}">${getPlatformEmoji(p.platforms?.[0])} ${p.title}</div>`;
+  }).join('');
+  const more = dayPosts.length > 3 ? `<div style="font-size:10px;color:var(--text-muted)">+${dayPosts.length-3} ещё</div>` : '';
+  el.innerHTML = numHtml + dotsHtml + more;
+  if (!otherMonth) el.onclick = () => { showPage('planner'); };
+  return el;
+}
+
+function changeMonth(delta) {
+  calMonth += delta;
+  if (calMonth > 11) { calMonth = 0; calYear++; }
+  if (calMonth < 0) { calMonth = 11; calYear--; }
+  renderCalendar();
+}
+
+function goToday() {
+  calYear = new Date().getFullYear();
+  calMonth = new Date().getMonth();
+  renderCalendar();
+}
+
+// ========== TASKS ==========
+function openTaskModal() {
+  document.getElementById('t-title').value = '';
+  document.getElementById('t-status').value = 'todo';
+  document.getElementById('t-priority').value = 'mid';
+  document.getElementById('t-date').value = '';
+  document.getElementById('t-desc').value = '';
+  document.getElementById('modal-task').classList.add('open');
+}
+
+function saveTask() {
+  const title = document.getElementById('t-title').value.trim();
+  if (!title) { notify('⚠️ Введите название задачи'); return; }
+
+  tasks.push({
+    id: uid(),
+    title,
+    status: document.getElementById('t-status').value,
+    priority: document.getElementById('t-priority').value,
+    date: document.getElementById('t-date').value,
+    desc: document.getElementById('t-desc').value,
+    created: Date.now()
+  });
+
+  save();
+  closeModal('modal-task');
+  renderTasks();
+  notify('✅ Задача добавлена');
+}
+
+function renderTasks() {
+  const cols = { todo: [], doing: [], review: [], done: [] };
+  tasks.forEach(t => { if (cols[t.status]) cols[t.status].push(t); });
+
+  ['todo','doing','review','done'].forEach(status => {
+    const el = document.getElementById('col-'+status);
+    document.getElementById('cnt-'+status).textContent = cols[status].length;
+
+    if (!cols[status].length) {
+      el.innerHTML = '<div style="font-size:12px;color:var(--text-muted);text-align:center;padding:20px 0">Пусто</div>';
+      return;
+    }
+
+    el.innerHTML = cols[status].map(t => `
+      <div class="task-card priority-${t.priority}" onclick="moveTask('${t.id}')">
+        <h4>${t.title}</h4>
+        ${t.desc ? `<p style="margin-top:4px">${t.desc.slice(0,60)}</p>` : ''}
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+          ${t.date ? `<span style="font-size:11px;color:var(--text-muted)">📅 ${formatDate(t.date)}</span>` : '<span></span>'}
+          <div style="display:flex;gap:4px">
+            <button class="action-btn action-del" onclick="event.stopPropagation();deleteTask('${t.id}')">✕</button>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  });
+}
+
+function moveTask(id) {
+  const t = tasks.find(t => t.id === id);
+  if (!t) return;
+  const order = ['todo','doing','review','done'];
+  const idx = order.indexOf(t.status);
+  if (idx < order.length - 1) {
+    t.status = order[idx + 1];
+    save();
+    renderTasks();
+    notify('→ Задача перемещена');
+  }
+}
+
+function deleteTask(id) {
+  tasks = tasks.filter(t => t.id !== id);
+  save();
+  renderTasks();
+  notify('🗑 Задача удалена');
+}
+
+// ========== ANALYTICS ==========
+function renderAnalytics() {
+  // Platform distribution
+  const platCount = {};
+  posts.forEach(p => (p.platforms||[]).forEach(pl => { platCount[pl] = (platCount[pl]||0) + 1; }));
+  const maxPlat = Math.max(...Object.values(platCount), 1);
+  document.getElementById('analytics-platforms').innerHTML = Object.entries(platCount).length
+    ? Object.entries(platCount).map(([pl, cnt]) => `
+      <div class="progress-bar-wrap">
+        <div class="progress-label"><span>${getPlatformEmoji(pl)} ${pl}</span><span>${cnt}</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width:${cnt/maxPlat*100}%;background:${pl==='YouTube'?'#ef4444':pl==='Instagram'?'#c13584':'var(--sage)'}"></div></div>
+      </div>`).join('')
+    : '<div class="empty-state"><div class="emoji">📊</div><p>Нет данных</p></div>';
+
+  // Status distribution
+  const statCount = {};
+  posts.forEach(p => { const s = p.status||'Идея'; statCount[s] = (statCount[s]||0)+1; });
+  const maxStat = Math.max(...Object.values(statCount), 1);
+  const statColors = {Идея:'#94a3b8',Сценарий:'#60a5fa',Съёмка:'#f59e0b',Монтаж:'#a78bfa',Готово:'#34d399',Опубликован:'var(--sage-dark)'};
+  document.getElementById('analytics-statuses').innerHTML = Object.entries(statCount).length
+    ? Object.entries(statCount).map(([s, cnt]) => `
+      <div class="progress-bar-wrap">
+        <div class="progress-label"><span>${s}</span><span>${cnt}</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width:${cnt/maxStat*100}%;background:${statColors[s]||'var(--sage)'}"></div></div>
+      </div>`).join('')
+    : '<div class="empty-state"><div class="emoji">📋</div><p>Нет данных</p></div>';
+
+  // Format distribution
+  const fmtCount = {};
+  posts.forEach(p => { const f = p.format||'Видео'; fmtCount[f] = (fmtCount[f]||0)+1; });
+  const fmtColors = ['var(--sage-dark)','var(--sage)','var(--blush)','#60a5fa','#f59e0b'];
+  const maxFmt = Math.max(...Object.values(fmtCount), 1);
+  document.getElementById('analytics-formats').innerHTML = Object.entries(fmtCount).length
+    ? `<div class="mini-chart">${Object.entries(fmtCount).map(([f,c],i) => `<div class="bar" style="height:${c/maxFmt*100}%;background:${fmtColors[i%fmtColors.length]}" data-val="${f}: ${c}"></div>`).join('')}</div>
+       <div class="chart-labels">${Object.keys(fmtCount).map(f=>`<div class="chart-label">${f.slice(0,5)}</div>`).join('')}</div>`
+    : '<div class="empty-state"><div class="emoji">🎬</div><p>Нет данных</p></div>';
+
+  // Monthly activity
+  const monthCount = Array(12).fill(0);
+  posts.forEach(p => { if (p.date) { const m = parseInt(p.date.split('-')[1])-1; monthCount[m]++; } });
+  const maxM = Math.max(...monthCount, 1);
+  document.getElementById('analytics-months').innerHTML =
+    `<div class="mini-chart">${monthCount.map((c,i) => `<div class="bar" style="height:${c/maxM*100}%;background:${i===new Date().getMonth()?'var(--sage-dark)':'var(--sage-light)'}" data-val="${MONTH_NAMES[i]}: ${c}"></div>`).join('')}</div>
+     <div class="chart-labels">${['Я','Ф','М','А','М','И','И','А','С','О','Н','Д'].map(m=>`<div class="chart-label">${m}</div>`).join('')}</div>`;
+}
+
+// ========== HELPERS ==========
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+
+document.querySelectorAll('.modal-overlay').forEach(o => {
+  o.addEventListener('click', e => { if (e.target === o) o.classList.remove('open'); });
+});
+
+function getPlatformPill(pl) {
+  const map = { YouTube:'pill-yt', Instagram:'pill-ig', TikTok:'pill-tk', ВКонтакте:'pill-vk', Telegram:'pill-tg' };
+  const emo = { YouTube:'▶', Instagram:'◈', TikTok:'♪', ВКонтакте:'⊕', Telegram:'✈' };
+  return `<span class="platform-pill ${map[pl]||''}">${emo[pl]||'•'} ${pl}</span>`;
+}
+
+function getPlatformEmoji(pl) {
+  const map = { YouTube:'▶', Instagram:'◈', TikTok:'♪', ВКонтакте:'⊕', Telegram:'✈' };
+  return map[pl] || '•';
+}
+
+function getPlatformColor(pl) {
+  const map = { YouTube:'#fee2e2', Instagram:'#fce7f3', TikTok:'#f0fdf4', ВКонтакте:'#ede9fe', Telegram:'#dbeafe' };
+  return map[pl] || 'var(--cream)';
+}
+
+function getStatusClass(s) {
+  const map = { 'Идея':'status-plan', 'Сценарий':'status-plan', 'Съёмка':'status-draft', 'Монтаж':'status-draft', 'Готово':'status-post', 'Опубликован':'status-done' };
+  return map[s] || 'status-plan';
+}
+
+// ========== INIT ==========
+renderDashboard();
+renderCalendar();
+loadBrand();
+renderGoals();
+</script>
+</body>
+</html>
